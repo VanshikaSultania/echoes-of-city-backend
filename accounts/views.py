@@ -9,7 +9,8 @@ from .serializers import UserSerializer
 class SignupView(APIView):
     def post(self, request):
         data = request.data.copy()
-        data['username'] = data.get('email').split('@')[0]
+        if not data.get('username') and data.get('email'):
+            data['username'] = data.get('email').split('@')[0]
 
         if data.get('password') != data.get('confirm_password'):
             return Response({'error': 'Passwords do not match'}, status=status.HTTP_400_BAD_REQUEST)
