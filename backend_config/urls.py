@@ -1,6 +1,7 @@
 """
 URL configuration for backend_config project.
 """
+# from django.contrib import admin
 from django.contrib import admin
 from django.urls import path, include
 
