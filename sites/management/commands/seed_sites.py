@@ -255,12 +255,27 @@ class Command(BaseCommand):
     help = 'Seeds the database with all heritage site data from heritageSites.js'
 
     def handle(self, *args, **kwargs):
+        # --- Create/Reset Admin ---
+        from django.contrib.auth.models import User
+        if not User.objects.filter(username='admin').exists():
+            User.objects.create_superuser('admin', 'admin@example.com', 'Admin@123')
+            self.stdout.write(self.style.SUCCESS('  ✓ Created Superuser: admin / Admin@123'))
+        else:
+            # Optional: Reset password if you want to be sure
+            u = User.objects.get(username='admin')
+            u.set_password('Admin@123')
+            u.save()
+            self.stdout.write(self.style.SUCCESS('  ↻ Updated Admin Password: Admin@123'))
+
         created_count = 0
         updated_count = 0
         for data in SITES:
+            # We don't want to pass 'type_tag' to defaults if it's not in the model
+            # but I added it to SITES earlier. Let's make sure it's handled.
+            site_data = data.copy()
             obj, created = HeritageSite.objects.update_or_create(
-                site_id=data['site_id'],
-                defaults=data,
+                site_id=site_data.pop('site_id'),
+                defaults=site_data,
             )
             if created:
                 created_count += 1
@@ -272,3 +287,4 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS(
             f'\nDone! {created_count} created, {updated_count} updated.'
         ))
+
