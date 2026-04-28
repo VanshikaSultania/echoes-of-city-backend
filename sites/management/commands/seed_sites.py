@@ -248,6 +248,37 @@ SITES = [
         "address": "Ulsoor, Bengaluru, Karnataka 560008",
         "theme_text_root": "text-[#eeeae2]", "theme_border_light": "border-[#eeeae2]/30",
     },
+    {
+        "site_id": "nandi-hills",
+        "place_id": "ChIJ688zN6QVrjsR-wYwR_z7_Lg",
+        "lat_lng": "13.3702,77.6835",
+        "hero_image": "https://karnatakatourism.org/wp-content/uploads/2020/06/Nandi-Hills-1.jpg",
+        "title_line1": "Nandi", "title_line2": "Hills",
+        "hero_title_color": "text-[#2d3a1a]", "hero_subtitle_color": "text-[#2d3a1a]",
+        "metric_text_color": "text-[#2d3a1a]", "hero_title_weight": "font-black",
+        "subtitle": "The Hill of Happiness",
+        "metrics": [
+            {"label": "ALTITUDE", "value": "1,478 m"},
+            {"label": "ESTABLISHED", "value": "Ganga Dynasty"},
+            {"label": "FAMOUS FOR", "value": "Sunrise Views", "span": True}
+        ],
+        "history_title": "A Fortress in the Clouds",
+        "history_paragraph1": "Nandi Hills, or Nandidurga, is an ancient hill fortress in southern India, in the Chikkaballapur district of Karnataka state. It is located 60 km from Bengaluru. The hills are nestled near the town of Nandi.",
+        "history_paragraph2": "In traditional belief, the hills are the origin of the Arkavathy, Ponnaiyar, Palar, Papagni, and Penna rivers. The hills are named after the ancient Dravidian temple dedicated to the bull Nandi, which stands on the hillock.",
+        "history_paragraph3": "The fort was fortified by Tipu Sultan and later used by British officials as a summer retreat due to its cool climate and scenic beauty.",
+        "history_image1": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Nandi_Hills_Sunrise.jpg",
+        "history_image2": "https://www.holidify.com/images/cmsuploads/compressed/5621_20190221160350.jpg",
+        "video_title": "Above the Clouds", "video_subtitle": "A CINEMATIC JOURNEY TO NANDI HILLS", "youtube_id": "WpS-yLpG_6w",
+        "gallery_title": "The Cloud Archive", "gallery_subtitle": "A CURATED GLIMPSE INTO THE HILL'S SPLENDOUR",
+        "gallery_images": [
+            "https://karnatakatourism.org/wp-content/uploads/2020/06/Nandi-Hills-1.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/f/f6/Nandi_Hills_Sunrise.jpg",
+            "https://www.holidify.com/images/cmsuploads/compressed/5621_20190221160350.jpg",
+            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/9d/9e/7b/nandi-hills.jpg"
+        ],
+        "address": "Chikkaballapur, Karnataka 562101",
+        "theme_text_root": "text-[#eeeae2]", "theme_border_light": "border-[#eeeae2]/30",
+    },
 ]
 
 
