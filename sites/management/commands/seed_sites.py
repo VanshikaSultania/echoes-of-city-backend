@@ -4,7 +4,6 @@ from sites.models import HeritageSite
 SITES = [
     {
         "site_id": "bangalore-palace",
-        "type_tag": "PALACE",
         "place_id": "ChIJN1ZKKUkWrjsRzxIVM363-LE",
         "lat_lng": "12.9988,77.5921",
         "hero_image": "https://images.unsplash.com/photo-1738694054579-de87e2590048?w=1600&auto=format&fit=crop&q=80",
@@ -36,7 +35,6 @@ SITES = [
     },
     {
         "site_id": "tipu-sultan-palace",
-        "type_tag": "PALACE",
         "place_id": "ChIJAeY0tOQVrjsRdZ8hleP7aRo",
         "lat_lng": "12.9593,77.5736",
         "hero_image": "https://media.istockphoto.com/id/178845414/photo/tipu-sultans-summer-palace.jpg?s=612x612&w=0&k=20&c=QCVIS7GrgLfh8MaBmdjrQFNeQ71BgP-K322BJVkGTmo=",
@@ -63,7 +61,6 @@ SITES = [
     },
     {
         "site_id": "vidhana-soudha",
-        "type_tag": "CIVIC",
         "place_id": "ChIJpwxMCXIWrjsRfedVMltgoP8",
         "lat_lng": "12.9796,77.5908",
         "hero_image": "https://t4.ftcdn.net/jpg/07/52/84/27/240_F_752842748_TMfPQUmG4kffW5uaZTdjj9yVLYDeRSm2.jpg",
@@ -95,7 +92,6 @@ SITES = [
     },
     {
         "site_id": "bull-temple",
-        "type_tag": "TEMPLE",
         "place_id": "ChIJX9XqWswVrjsRRH3ymQ8yCDQ",
         "lat_lng": "12.9416,77.5683",
         "hero_image": "https://temple.yatradham.org/public/Product/temple/temple_hzOxj2OQ_202408171754050.jpeg",
@@ -128,7 +124,6 @@ SITES = [
     },
     {
         "site_id": "cubbon-park",
-        "type_tag": "PARK",
         "place_id": "ChIJL2fQ53MWrjsRuN9D6aalLMY",
         "lat_lng": "12.9765,77.5946",
         "hero_image": "https://karnatakatourism.org/wp-content/uploads/2020/06/cabbon-park.jpg",
@@ -160,7 +155,6 @@ SITES = [
     },
     {
         "site_id": "lalbagh-glass-house",
-        "type_tag": "PARK",
         "place_id": "ChIJHdPykcEVrjsRIr4v35kLEY4",
         "lat_lng": "12.9507,77.5848",
         "hero_image": "https://gumlet.assettype.com/homegrown/2023-04/e0496c82-b789-4698-8fd7-89026c8b088d/lalbagh2.jpeg?auto=format%2Ccompress&w=1200",
@@ -193,7 +187,6 @@ SITES = [
     },
     {
         "site_id": "begur-fort",
-        "type_tag": "FORT",
         "place_id": "ChIJUeP-lDRrrjsR1wQxWlw79Y4",
         "lat_lng": "12.8821,77.6256",
         "hero_image": "https://3.bp.blogspot.com/_QQ7MLfwirhM/TDBJOLlEDlI/AAAAAAAAAAM/cqnKoq_AAEk/s1600/Begur+033.JPG",
@@ -225,7 +218,6 @@ SITES = [
     },
     {
         "site_id": "ulsoor-lake",
-        "type_tag": "LAKE",
         "place_id": "ChIJeT03x54VrjsRi14iL9r8w9Q",
         "lat_lng": "12.9818,77.6190",
         "hero_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/8e/cb/3f/caption.jpg?w=1200&h=-1&s=1",
