@@ -4,6 +4,7 @@ from sites.models import HeritageSite
 SITES = [
     {
         "site_id": "bangalore-palace",
+        "type_tag": "PALACE",
         "place_id": "ChIJN1ZKKUkWrjsRzxIVM363-LE",
         "lat_lng": "12.9988,77.5921",
         "hero_image": "https://images.unsplash.com/photo-1738694054579-de87e2590048?w=1600&auto=format&fit=crop&q=80",
@@ -35,6 +36,7 @@ SITES = [
     },
     {
         "site_id": "tipu-sultan-palace",
+        "type_tag": "PALACE",
         "place_id": "ChIJAeY0tOQVrjsRdZ8hleP7aRo",
         "lat_lng": "12.9593,77.5736",
         "hero_image": "https://media.istockphoto.com/id/178845414/photo/tipu-sultans-summer-palace.jpg?s=612x612&w=0&k=20&c=QCVIS7GrgLfh8MaBmdjrQFNeQ71BgP-K322BJVkGTmo=",
@@ -61,6 +63,7 @@ SITES = [
     },
     {
         "site_id": "vidhana-soudha",
+        "type_tag": "CIVIC",
         "place_id": "ChIJpwxMCXIWrjsRfedVMltgoP8",
         "lat_lng": "12.9796,77.5908",
         "hero_image": "https://t4.ftcdn.net/jpg/07/52/84/27/240_F_752842748_TMfPQUmG4kffW5uaZTdjj9yVLYDeRSm2.jpg",
@@ -92,6 +95,7 @@ SITES = [
     },
     {
         "site_id": "bull-temple",
+        "type_tag": "TEMPLE",
         "place_id": "ChIJX9XqWswVrjsRRH3ymQ8yCDQ",
         "lat_lng": "12.9416,77.5683",
         "hero_image": "https://temple.yatradham.org/public/Product/temple/temple_hzOxj2OQ_202408171754050.jpeg",
@@ -124,6 +128,7 @@ SITES = [
     },
     {
         "site_id": "cubbon-park",
+        "type_tag": "PARK",
         "place_id": "ChIJL2fQ53MWrjsRuN9D6aalLMY",
         "lat_lng": "12.9765,77.5946",
         "hero_image": "https://karnatakatourism.org/wp-content/uploads/2020/06/cabbon-park.jpg",
@@ -155,6 +160,7 @@ SITES = [
     },
     {
         "site_id": "lalbagh-glass-house",
+        "type_tag": "PARK",
         "place_id": "ChIJHdPykcEVrjsRIr4v35kLEY4",
         "lat_lng": "12.9507,77.5848",
         "hero_image": "https://gumlet.assettype.com/homegrown/2023-04/e0496c82-b789-4698-8fd7-89026c8b088d/lalbagh2.jpeg?auto=format%2Ccompress&w=1200",
@@ -187,6 +193,7 @@ SITES = [
     },
     {
         "site_id": "begur-fort",
+        "type_tag": "FORT",
         "place_id": "ChIJUeP-lDRrrjsR1wQxWlw79Y4",
         "lat_lng": "12.8821,77.6256",
         "hero_image": "https://3.bp.blogspot.com/_QQ7MLfwirhM/TDBJOLlEDlI/AAAAAAAAAAM/cqnKoq_AAEk/s1600/Begur+033.JPG",
@@ -218,6 +225,7 @@ SITES = [
     },
     {
         "site_id": "ulsoor-lake",
+        "type_tag": "LAKE",
         "place_id": "ChIJeT03x54VrjsRi14iL9r8w9Q",
         "lat_lng": "12.9818,77.6190",
         "hero_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/8e/cb/3f/caption.jpg?w=1200&h=-1&s=1",
@@ -250,9 +258,9 @@ SITES = [
     },
     {
         "site_id": "nandi-hills",
-        "place_id": "ChIJ688zN6QVrjsR-wYwR_z7_Lg",
+        "place_id": "ChIJF-r860XksTsRCGYZWSn3ORY",
         "lat_lng": "13.3702,77.6835",
-        "hero_image": "https://karnatakatourism.org/wp-content/uploads/2020/06/Nandi-Hills-1.jpg",
+        "hero_image": "https://s7ap1.scene7.com/is/image/incredibleindia/nandi-hills-bangalore-karnataka-1-attr-hero?qlt=82&ts=1742171255239",
         "title_line1": "Nandi", "title_line2": "Hills",
         "hero_title_color": "text-[#2d3a1a]", "hero_subtitle_color": "text-[#2d3a1a]",
         "metric_text_color": "text-[#2d3a1a]", "hero_title_weight": "font-black",
@@ -266,15 +274,14 @@ SITES = [
         "history_paragraph1": "Nandi Hills, or Nandidurga, is an ancient hill fortress in southern India, in the Chikkaballapur district of Karnataka state. It is located 60 km from Bengaluru. The hills are nestled near the town of Nandi.",
         "history_paragraph2": "In traditional belief, the hills are the origin of the Arkavathy, Ponnaiyar, Palar, Papagni, and Penna rivers. The hills are named after the ancient Dravidian temple dedicated to the bull Nandi, which stands on the hillock.",
         "history_paragraph3": "The fort was fortified by Tipu Sultan and later used by British officials as a summer retreat due to its cool climate and scenic beauty.",
-        "history_image1": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Nandi_Hills_Sunrise.jpg",
-        "history_image2": "https://www.holidify.com/images/cmsuploads/compressed/5621_20190221160350.jpg",
-        "video_title": "Above the Clouds", "video_subtitle": "A CINEMATIC JOURNEY TO NANDI HILLS", "youtube_id": "WpS-yLpG_6w",
+        "history_image1": "https://theroamingshoes.com/wp-content/uploads/2020/10/IMG_20200115_063704.jpg",
+        "history_image2": "https://theroamingshoes.com/wp-content/uploads/2020/10/IMG_20200115_062336.jpg",
+        "video_title": "Above the Clouds", "video_subtitle": "A CINEMATIC JOURNEY TO NANDI HILLS", "youtube_id": "iRQ8KidoXFE",
         "gallery_title": "The Cloud Archive", "gallery_subtitle": "A CURATED GLIMPSE INTO THE HILL'S SPLENDOUR",
         "gallery_images": [
-            "https://karnatakatourism.org/wp-content/uploads/2020/06/Nandi-Hills-1.jpg",
-            "https://upload.wikimedia.org/wikipedia/commons/f/f6/Nandi_Hills_Sunrise.jpg",
-            "https://www.holidify.com/images/cmsuploads/compressed/5621_20190221160350.jpg",
-            "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/9d/9e/7b/nandi-hills.jpg"
+            "https://s7ap1.scene7.com/is/image/incredibleindia/nandi-hills-bangalore-karnataka-2-attr-hero?qlt=82&ts=1742174246149",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Sunrise_at_Nandi_Hills.jpg/500px-Sunrise_at_Nandi_Hills.jpg",
+            "https://theroamingshoes.com/wp-content/uploads/2020/10/IMG_20200115_062336.jpg",
         ],
         "address": "Chikkaballapur, Karnataka 562101",
         "theme_text_root": "text-[#eeeae2]", "theme_border_light": "border-[#eeeae2]/30",
