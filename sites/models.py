@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 
 class HeritageSite(models.Model):
     # Core identity
@@ -56,3 +56,16 @@ class HeritageSite(models.Model):
 
     def __str__(self):
         return f"{self.title_line1} {self.title_line2}"
+
+class Review(models.Model):
+    site = models.ForeignKey(HeritageSite, related_name='local_reviews', on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    text = models.TextField()
+    rating = models.IntegerField(default=5)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-created_at']
+
+    def __str__(self):
+        return f"{self.user.username} - {self.site.site_id}"

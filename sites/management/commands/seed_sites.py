@@ -5,6 +5,7 @@ SITES = [
     {
         "site_id": "bangalore-palace",
         "place_id": "ChIJN1ZKKUkWrjsRzxIVM363-LE",
+        "type_tag": "PALACE",
         "lat_lng": "12.9988,77.5921",
         "hero_image": "https://images.unsplash.com/photo-1738694054579-de87e2590048?w=1600&auto=format&fit=crop&q=80",
         "title_line1": "Bangalore", "title_line2": "Palace",
@@ -36,6 +37,7 @@ SITES = [
     {
         "site_id": "tipu-sultan-palace",
         "place_id": "ChIJAeY0tOQVrjsRdZ8hleP7aRo",
+        "type_tag": "PALACE",
         "lat_lng": "12.9593,77.5736",
         "hero_image": "https://media.istockphoto.com/id/178845414/photo/tipu-sultans-summer-palace.jpg?s=612x612&w=0&k=20&c=QCVIS7GrgLfh8MaBmdjrQFNeQ71BgP-K322BJVkGTmo=",
         "title_line1": "Tipu Sultan's", "title_line2": "Summer Palace",
@@ -62,6 +64,7 @@ SITES = [
     {
         "site_id": "vidhana-soudha",
         "place_id": "ChIJpwxMCXIWrjsRfedVMltgoP8",
+        "type_tag": "CIVIC",
         "lat_lng": "12.9796,77.5908",
         "hero_image": "https://t4.ftcdn.net/jpg/07/52/84/27/240_F_752842748_TMfPQUmG4kffW5uaZTdjj9yVLYDeRSm2.jpg",
         "title_line1": "Vidhana", "title_line2": "Soudha",
@@ -93,6 +96,7 @@ SITES = [
     {
         "site_id": "bull-temple",
         "place_id": "ChIJX9XqWswVrjsRRH3ymQ8yCDQ",
+        "type_tag": "TEMPLE",
         "lat_lng": "12.9416,77.5683",
         "hero_image": "https://temple.yatradham.org/public/Product/temple/temple_hzOxj2OQ_202408171754050.jpeg",
         "title_line1": "Bull", "title_line2": "Temple",
@@ -125,6 +129,7 @@ SITES = [
     {
         "site_id": "cubbon-park",
         "place_id": "ChIJL2fQ53MWrjsRuN9D6aalLMY",
+        "type_tag": "PARK",
         "lat_lng": "12.9765,77.5946",
         "hero_image": "https://karnatakatourism.org/wp-content/uploads/2020/06/cabbon-park.jpg",
         "title_line1": "Cubbon", "title_line2": "Park",
@@ -155,7 +160,8 @@ SITES = [
     },
     {
         "site_id": "lalbagh-glass-house",
-        "place_id": "ChIJHdPykcEVrjsRIr4v35kLEY4",
+        "place_id": "ChIJL9cMwQ0UrjsRM_2i5oK_tL4",
+        "type_tag": "PARK",
         "lat_lng": "12.9507,77.5848",
         "hero_image": "https://gumlet.assettype.com/homegrown/2023-04/e0496c82-b789-4698-8fd7-89026c8b088d/lalbagh2.jpeg?auto=format%2Ccompress&w=1200",
         "title_line1": "Lalbagh", "title_line2": "Botanical Garden",
@@ -187,8 +193,9 @@ SITES = [
     },
     {
         "site_id": "begur-fort",
-        "place_id": "ChIJUeP-lDRrrjsR1wQxWlw79Y4",
-        "lat_lng": "12.8821,77.6256",
+        "place_id": "ChIJ3Z6nZ1gTrjsR8-wB2P6K0yY",
+        "type_tag": "FORT",
+        "lat_lng": "12.8824,77.6251",
         "hero_image": "https://3.bp.blogspot.com/_QQ7MLfwirhM/TDBJOLlEDlI/AAAAAAAAAAM/cqnKoq_AAEk/s1600/Begur+033.JPG",
         "title_line1": "Begur", "title_line2": "Fort",
         "hero_title_color": "text-[#3c1414]", "hero_subtitle_color": "text-[#3c1414]",
@@ -219,6 +226,7 @@ SITES = [
     {
         "site_id": "ulsoor-lake",
         "place_id": "ChIJWwLHKpAWrjsRLHdwWyGN2lw",
+        "type_tag": "LAKE",
         "lat_lng": "12.9818,77.6190",
         "hero_image": "https://www.fabhotels.com/blog/wp-content/uploads/2020/03/Ulsoor-Lake-Bangalore-600.jpg",
         "title_line1": "Ulsoor", "title_line2": "Lake",

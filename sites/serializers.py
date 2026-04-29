@@ -1,5 +1,27 @@
 from rest_framework import serializers
-from .models import HeritageSite
+from .models import HeritageSite, Review
+
+class ReviewSerializer(serializers.ModelSerializer):
+    author_name = serializers.CharField(source='user.username', read_only=True)
+    relative_time_description = serializers.SerializerMethodField()
+    
+    class Meta:
+        model = Review
+        fields = ['id', 'author_name', 'text', 'rating', 'relative_time_description', 'created_at']
+
+    def get_relative_time_description(self, obj):
+        from django.utils import timezone
+        now = timezone.now()
+        diff = now - obj.created_at
+        if diff.days == 0:
+            return "Today"
+        elif diff.days == 1:
+            return "1 day ago"
+        elif diff.days < 30:
+            return f"{diff.days} days ago"
+        elif diff.days < 365:
+            return f"{diff.days // 30} months ago"
+        return f"{diff.days // 365} years ago"
 
 
 class HeritageSiteSerializer(serializers.ModelSerializer):
@@ -28,6 +50,7 @@ class HeritageSiteSerializer(serializers.ModelSerializer):
     metrics = serializers.JSONField()
     address = serializers.CharField()
     theme = serializers.SerializerMethodField()
+    local_reviews = ReviewSerializer(many=True, read_only=True)
 
     class Meta:
         model = HeritageSite
@@ -37,7 +60,7 @@ class HeritageSiteSerializer(serializers.ModelSerializer):
             'heroTitleColor', 'heroSubtitleColor', 'heroTitleWeight', 'metricTextColor',
             'history', 'video',
             'galleryTitle', 'gallerySubtitle', 'gallery',
-            'metrics', 'address', 'theme',
+            'metrics', 'address', 'theme', 'local_reviews',
         ]
 
     def get_title(self, obj):
