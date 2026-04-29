@@ -235,7 +235,7 @@ SITES = [
         "history_paragraph2": "Dotted with picturesque islands and lined with verdant greenery, the lake has been an integral part of the city's ecosystem and cultural landscape.",
         "history_paragraph3": "Today, it serves as a popular recreational spot, offering boating facilities and a tranquil escape from the urban rush. The lake also plays a central role during the Ganesha Chaturthi festival.",
         "history_image1": "https://dq1q7qkthxkc0.cloudfront.net/BlogMedia/952947d8-c036-45bd-bd84-5c350adf6fdb.webp",
-        "history_image2": "https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2023/12/12104523/ulsoor-lake.jpeg",
+        "history_image2": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG5w1_fiKOgKncojA6QVe_5EFWmtordhp1hi1XqSXeW3xj8EOwL7IRFZkajT3MD5FU06t_ajD5Sb9a6r8RI9j-dCNHpGGDQN--006FOKKCaKU9CdVaiI7fZyKDF27DQLw_-M00v=w228-h228-n-k-no",
         "video_title": "Tranquil Waters", "video_subtitle": "A GLIMPSE INTO ULSOOR'S SERENITY", "youtube_id": "yAm5p2PHrjw",
         "gallery_title": "The Water Archive", "gallery_subtitle": "A CURATED GLIMPSE INTO NATURE'S MIRROR",
         "gallery_images": [
@@ -251,6 +251,7 @@ SITES = [
     {
         "site_id": "nandi-hills",
         "place_id": "ChIJc6f3pU_ksTsRQ9-4AogYiBE",
+        "type_tag": "HILL",
         "lat_lng": "13.3702,77.6835",
         "hero_image": "https://s7ap1.scene7.com/is/image/incredibleindia/nandi-hills-bangalore-karnataka-1-attr-hero?qlt=82&ts=1742171255239",
         "title_line1": "Nandi", "title_line2": "Hills",

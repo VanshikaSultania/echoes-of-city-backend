@@ -12,6 +12,9 @@ class SignupView(APIView):
         if not data.get('username') and data.get('email'):
             data['username'] = data.get('email').split('@')[0]
 
+        if len(data.get('password', '')) < 6:
+            return Response({'error': 'Password must be at least 6 characters long'}, status=status.HTTP_400_BAD_REQUEST)
+
         if data.get('password') != data.get('confirm_password'):
             return Response({'error': 'Passwords do not match'}, status=status.HTTP_400_BAD_REQUEST)
         serializer = UserSerializer(data=data)
@@ -22,7 +25,7 @@ class SignupView(APIView):
                 password=serializer.validated_data['password']
             )
             token, _ = Token.objects.get_or_create(user=user)
-            return Response({'token': token.key, 'user_id': user.id}, status=status.HTTP_201_CREATED)
+            return Response({'token': token.key, 'user_id': user.id, 'email': user.email}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class LoginView(APIView):
@@ -33,7 +36,7 @@ class LoginView(APIView):
         user = authenticate(username=username, password=password)
         if user:
             token, _ = Token.objects.get_or_create(user=user)
-            return Response({'token': token.key, 'user_id': user.id}, status=status.HTTP_200_OK)
+            return Response({'token': token.key, 'user_id': user.id, 'email': user.email}, status=status.HTTP_200_OK)
         else:
             return Response({'error': 'Invalid Credentials'}, status=status.HTTP_400_BAD_REQUEST)
 
